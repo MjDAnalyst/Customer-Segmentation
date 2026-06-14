@@ -10,7 +10,7 @@ Organizations that treat all customers as one group face:
 - Poor ROI on marketing spend
 - Inefficient loyalty programs
 - Missed revenue from high-value customers
-- Over-investment in low-value segments
+- Over investment in low value segments
 
 Since the number and nature of customer types were unknown upfront, **unsupervised clustering** was the most appropriate analytical method.
 
@@ -31,7 +31,7 @@ Since the number and nature of customer types were unknown upfront, **unsupervis
 |---|---|
 | Records | 1,000 customers |
 | Features | Age, Annual Income, Monthly Spend, Online Visits/Month, Store Visits/Month, Loyalty Score |
-| Source | Simulated real-world customer behavioral data |
+| Source | Simulated real world customer behavioral data |
 
 ---
 
