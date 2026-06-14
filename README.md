@@ -1,6 +1,6 @@
 # 🧩 Customer Segmentation for Strategic Growth & Decision Support
 
-An unsupervised machine learning project applying **K-Means clustering** to segment customers based on behavioral and financial patterns — enabling data-driven targeting, loyalty strategy, and resource allocation.
+An unsupervised machine learning project applying **K-Means clustering** to segment customers based on behavioral and financial patterns, enabling data driven targeting, loyalty strategy, and resource allocation.
 
 ---
 
@@ -20,7 +20,7 @@ Since the number and nature of customer types were unknown upfront, **unsupervis
 
 1. Identify distinct customer groups based on spending, income, engagement, and loyalty
 2. Profile each segment with descriptive business names and behavioral tendencies
-3. Pinpoint high-value segments and those at risk of churn
+3. Pinpoint high value segments and those at risk of churn
 4. Provide actionable recommendations for resource allocation per segment
 
 ---
@@ -74,7 +74,7 @@ Neither online nor in-store visit frequency shows a meaningful correlation with 
 
 ### Online vs Store Visit Behaviour
 
-With a correlation coefficient of **−0.01**, online and in-store visits are virtually independent — customers who shop online frequently do not necessarily visit physical stores more often.
+With a correlation coefficient of **−0.01**, online and in-store visits are virtually independent, customers who shop online frequently do not necessarily visit physical stores more often.
 
 ![Online vs Store Visits](viz_6.png)
 
@@ -92,7 +92,7 @@ Most features are largely independent of each other (values near 0.00), confirmi
 
 ### Preprocessing
 - Cleaned `Annual_Income` column (comma-formatted strings → float)
-- Applied **StandardScaler** to normalize all features — critical to prevent Annual Income from dominating cluster boundaries due to its large variance
+- Applied **StandardScaler** to normalize all features this is critical to prevent Annual Income from dominating cluster boundaries due to its large variance
 
 ### Optimal Cluster Selection — Elbow Method
 
@@ -129,7 +129,7 @@ The elbow curve indicates the optimal number of clusters is **K = 5**, where ine
 | **1** | Reliable Mainstream Customers | Mixed | Low–Mod | Mid–High | Stable base; upsell opportunities |
 | **2** | Premium Loyal Advocates | High | High | High | Highest LTV; protect with exclusive perks |
 | **3** | Aspirational Spenders | Low | Moderate–High | Mid | Budget-stretched; flexible payment plans |
-| **4** | Average Spenders | Mixed | Moderate | Mid | Price-sensitive; cross-sell to upgrade tier |
+| **4** | Average Spenders | Mixed | Moderate | Mid | Price sensitive; cross-sell to upgrade tier |
 
 ---
 
@@ -137,8 +137,8 @@ The elbow curve indicates the optimal number of clusters is **K = 5**, where ine
 
 - **Income and Monthly Spend** are the strongest clustering signals; visits add minimal separation without scaling
 - **Cluster 2 (Premium Loyal Advocates)** drives disproportionate revenue and should receive exclusive loyalty treatment
-- **Cluster 3 (Aspirational Spenders)** show strong brand affinity despite limited income — nurturing them now builds long-term loyalty as income grows
-- **Cluster 0 (Churn Risks)** represent high-income customers the business is failing to retain — targeted retention campaigns are essential
+- **Cluster 3 (Aspirational Spenders)** show strong brand affinity despite limited income, nurturing them now builds long term loyalty as income grows
+- **Cluster 0 (Churn Risks)** represent high income customers the business is failing to retain targeted retention campaigns are essential.
 
 ---
 
